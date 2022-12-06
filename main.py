@@ -35,7 +35,7 @@ async def on_message(ctx):
                 words_to_correct.append(len(element) * '* ')
         
         # making a suitable entry for send module
-        string_to_return = str(str(ctx.author.name)+", "+ " said " +' '.join(li))
+        string_to_return = str(str(ctx.author.name)+", "+ " said " +' '.join(words_to_correct))
         # returning REPORT
         await ctx.channel.send(string_to_return)
         
