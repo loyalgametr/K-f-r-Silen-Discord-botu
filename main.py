@@ -27,7 +27,7 @@ async def on_message(ctx):
         
         # getting words into a list to join together that are entered to chat (excluding curses)
         for element in string_message:
-            if element not in list:
+            if element not in curses:
 
                 words_to_correct.append(element)
             # instead of curse (* ) is entered because multiple * are differently perceived by discord
@@ -35,7 +35,7 @@ async def on_message(ctx):
                 words_to_correct.append(len(element) * '* ')
         
         # making a suitable entry for send module
-        string_to_return = str(str(ctx.author.name)+", "+ " said " +' '.join(words_to_correct))
+        string_to_return = str(str(ctx.author.name)+", "+ " said  " +' '.join(words_to_correct))
         # returning REPORT
         await ctx.channel.send(string_to_return)
         
