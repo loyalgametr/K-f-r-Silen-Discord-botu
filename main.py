@@ -7,9 +7,13 @@ client = Bot(command_prefix="", intents=intets)
 @client.event
 async def on_message(ctx):
     
-    # curses will be written down here. 
-    #BEFORE STARTING THE ALGORITHM PLEASE FILL THE LIST BELOW WITH WHAT YOU WANT NOT TO BE WRITTEN
-    curses = []
+    # curses will be processed down here. 
+    with open("curses.txt", "w") as file:
+        curses = file.read()
+        curses_list = curses.split(" ")
+        if len(curses_list) == 0:
+            curses_list = curses.split(",")
+        
     set_of_curses =set(curses)
     
     # getting the words from entered message into a set
