@@ -45,4 +45,4 @@ async def on_message(ctx):
         await ctx.channel.send(string_to_return)
 
 
-client.run('MTA0ODMyNTA0NjYzNDAyMDk3NQ.GfNk4f.MgJ9A1RR1GEUyZaWGavGjfJTnfvKrqjVddxdTU')
+client.run('YOUR_TOKEN')
