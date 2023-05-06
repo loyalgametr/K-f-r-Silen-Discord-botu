@@ -6,15 +6,5 @@ Detects curses from entered message in Discord. Deletes them. Reports them with 
 ## Used Packages
 
  ```pip
-pip install aiohttp==3.8.4
-pip install aiosignal==1.3.1
-pip install async-timeout==4.0.2
-pip install attrs==22.2.0
-pip install charset-normalizer==3.0.1
-pip install discord==2.1.0
-pip install discord.py==2.1.1
-pip install frozenlist==1.3.3
-pip install idna==3.4
-pip install multidict==6.0.4
-pip install yarl==1.8.2
+pip install -r requirements.txt
  ```
